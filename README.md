@@ -52,11 +52,3 @@ This project simulates a cloud-based file storage service, allowing users to upl
 * `Service/` - Contains the core business logic
 * `Zuul Gateway/` - Manages routing and load balancing between services
 * `README.md` - Project documentation
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
-
-## License
-
-This project is open-source and available under the MIT License.
