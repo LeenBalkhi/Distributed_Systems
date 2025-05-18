@@ -1,0 +1,19 @@
+server:
+  port: 8085
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: fileUpload
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/upload/**
+        - id: comment
+          uri: http://localhost:8083/
+          predicates:
+            - Path=/comment/**
+        - id: fileDownload
+            uri: http://localhost:8084/
+            predicates:
+              - Path=/download/**

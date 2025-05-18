@@ -1,0 +1,14 @@
+server:
+  port: 8085
+zuul:
+  routes:
+    fileUpload:
+      path : /upload/**
+      seviceId: FILE-CHUNK-UPLOAD
+    comment:
+      path: /comment/**
+      seviceId: COMMENT-API
+    fileDownload:
+      path: /download/**
+      seviceId: FILE-UPLOAD-DOWNLOAD
+
